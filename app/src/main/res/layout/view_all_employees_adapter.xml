@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".employee.landingScreen.adapters.EmployeeTimelineAdapter">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:weightSum="6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/statusTv"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/rounded_btn"
+                android:backgroundTint="@color/colorGreen"
+                android:gravity="center"
+                android:textSize="@dimen/_9sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Present"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/colorGreen"
+                android:gravity="center"
+                android:textSize="@dimen/_9sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:text="Employee Name"
+                android:textColor="@color/colorCharcoalGrey" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/checkInTv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/_9sdp"
+            android:gravity="center"
+            android:text="07:10 am"
+            android:textColor="@color/colorCharcoalGrey" />
+
+
+        <TextView
+            android:id="@+id/checkOutTv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="03:30 pm"
+            android:textColor="@color/colorCharcoalGrey" />
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="01/01/0001"
+            android:textColor="@color/colorCharcoalGrey" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

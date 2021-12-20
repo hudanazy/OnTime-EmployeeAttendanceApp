@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onTime">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/fullScreenWithActionBar">
+        <activity android:name=".employee.landingScreen.settings.EmployeeSettings"></activity>
+        <activity android:name=".employer.addOffice.AddOffice" />
+        <activity android:name=".forgotPassword.resetPassword" />
+        <activity android:name=".employer.removeEmployee.RemoveEmployee" />
+        <activity android:name=".signUp.SignUpEmployee" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyA2O7-c1vXr8jfjpJqsv4vkf5GgHD5lxDU" />
+
+        <activity android:name=".employer.showEmployeesOnMap.ShowEmployeesOnMap" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".employer.viewAllEmployees.activities.ViewAllEmployees" />
+        <activity android:name=".employer.addEmployee.AddEmployee" />
+        <activity android:name=".employer.landingScreen.EmployerLandingScreen" />
+        <activity android:name=".employee.landingScreen.activities.EmployeeLandingScreen" />
+        <activity android:name=".EmployeeAttendance.Attendance" />
+        <activity android:name=".forgotPassword.ForgotPassword" />
+        <activity android:name=".signUp.SignUpEmployer" />
+        <activity android:name=".singIn.ChooseRole" />
+        <activity android:name=".singIn.SignIn" />
+        <activity
+            android:name=".splashScreen.SplashScreen"
+            android:theme="@style/fullScreenWithActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
